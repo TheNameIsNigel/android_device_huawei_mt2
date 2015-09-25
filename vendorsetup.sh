@@ -1,0 +1,3 @@
+add_lunch_combo pac_mt2-user
+add_lunch_combo pac_mt2-userdebug
+add_lunch_combo pac_mt2-release
