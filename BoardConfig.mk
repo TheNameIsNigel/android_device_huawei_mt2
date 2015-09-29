@@ -125,7 +125,8 @@ BOARD_SEPOLICY_UNION += \
     libqmi_oem_main.te \
     kernel.te \
     oeminfo.te \
-    platform_app.te
+    platform_app.te \
+	vold.te
 
 # TWRP
 #   Uncomment the lines below only when building TWRP.
