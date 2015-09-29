@@ -13,13 +13,13 @@
 # limitations under the License.
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/huawei/mt2/mt2.mk)
+$(call inherit-product, device/huawei/mt2/device.mk)
 
 PRODUCT_NAME := full_mt2
 PRODUCT_DEVICE := mt2
-PRODUCT_BRAND := huawei
+PRODUCT_BRAND := Android
 PRODUCT_MANUFACTURER := Huawei
-PRODUCT_MODEL := Ascend Mate 2
+PRODUCT_MODEL := AOSP on Mate2
