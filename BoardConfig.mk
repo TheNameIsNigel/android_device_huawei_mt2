@@ -122,8 +122,8 @@ TARGET_RIL_VARIANT := caf
 -include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += device/huawei/mt2/sepolicy
 BOARD_SEPOLICY_UNION += \
-    libqmi_oem_main.te \
     kernel.te \
+    libqmi_oem_main.te \
     oeminfo.te \
     platform_app.te
 
