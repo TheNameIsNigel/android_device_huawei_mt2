@@ -1,4 +1,0 @@
-# chargeled
-recovery_only(`
-  allow healthd sysfs_battery_supply:file getattr;
-')

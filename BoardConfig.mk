@@ -85,6 +85,9 @@ USE_OPENGL_RENDERER := true
 TARGET_INIT_VENDOR_LIB := libinit_mt2
 TARGET_LIBINIT_DEFINES_FILE := device/huawei/mt2/init/init_mt2.c
 
+# Inline kernel building
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
+
 # Kernel
 BOARD_CUSTOM_BOOTIMG_MK := device/huawei/mt2/mkbootimg.mk
 BOARD_KERNEL_BASE := 0x0
@@ -130,7 +133,7 @@ BOARD_SEPOLICY_UNION += \
 # TWRP
 #   Uncomment the lines below only when building TWRP.
 #   Do not leave SELinux permissive when building CM or Cyanogen Recovery.
-# BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
 # RECOVERY_VARIANT := twrp
