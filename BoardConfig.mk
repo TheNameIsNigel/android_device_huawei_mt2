@@ -130,7 +130,7 @@ BOARD_SEPOLICY_UNION += \
 # TWRP
 #   Uncomment the lines below only when building TWRP.
 #   Do not leave SELinux permissive when building CM or Cyanogen Recovery.
-# BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
 # RECOVERY_VARIANT := twrp
